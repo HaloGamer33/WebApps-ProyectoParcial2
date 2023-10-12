@@ -6,5 +6,6 @@ public class Estudiante {
     public string? Apellidos { get; set; }
     public string? Nombres { get; set; }
     [DataType(DataType.Date)]
+    [Display(Name = "Fecha de inscipcion")]
     public DateTime Fecha_inscripcion { get; set; }
 }

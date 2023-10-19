@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using ProyectoParcial2.Data;
-using ProyectoParcial2.Models;
+using Universidad.Data;
+using Universidad.Models;
 
-namespace ProyectoParcial2.Pages_Inscripciones
+namespace Universidad.Pages_Inscripciones
 {
     public class DetailsModel : PageModel
     {
-        private readonly ProyectoParcial2.Data.ProyectoParcial2Context _context;
+        private readonly Universidad.Data.UniversidadContext _context;
 
-        public DetailsModel(ProyectoParcial2.Data.ProyectoParcial2Context context)
+        public DetailsModel(Universidad.Data.UniversidadContext context)
         {
             _context = context;
         }

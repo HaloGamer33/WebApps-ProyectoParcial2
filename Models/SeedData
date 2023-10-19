@@ -1,0 +1,41 @@
+using Microsoft.EntityFrameworkCore;
+using Universidad.Data;
+namespace Universidad.Models;
+public static class SeedData
+{
+    public static void Initialize(IServiceProvider serviceProvider)
+    {
+        using (var context = new UniversidadContext(
+        serviceProvider.GetRequiredService<
+        DbContextOptions<UniversidadContext>>()))
+        {
+            if (context == null || context.Curso == null)
+            {
+                throw new ArgumentNullException("Null UniversidadContext");
+            }
+            // Look for any movies.
+            if (context.Curso.Any())
+            {
+                return; // DB has been seeded
+            }
+            context.Curso.AddRange(
+            new Curso
+            {
+                Titulo = "Tecnologías",
+                Creditos = 14,
+            },
+            new Curso
+            {
+                Titulo = "Administración",
+                Creditos = 7,
+            },
+            new Curso
+            {
+                Titulo = "Humanidades",
+                Creditos = 9,
+            }
+           );
+            context.SaveChanges();
+        }
+    }
+}

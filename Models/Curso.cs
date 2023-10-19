@@ -1,4 +1,4 @@
-namespace ProyectoParcial2.Models;
+namespace Universidad.Models;
 
 public class Curso {
     public int Id { get; set; }

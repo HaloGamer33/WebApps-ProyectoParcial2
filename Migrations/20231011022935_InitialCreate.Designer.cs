@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProyectoParcial2.Data;
+using Universidad.Data;
 
 #nullable disable
 
-namespace ProyectoParcial2.Migrations
+namespace Universidad.Migrations
 {
-    [DbContext(typeof(ProyectoParcial2Context))]
+    [DbContext(typeof(UniversidadContext))]
     [Migration("20231011022935_InitialCreate")]
     partial class InitialCreate
     {
@@ -20,7 +20,7 @@ namespace ProyectoParcial2.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
 
-            modelBuilder.Entity("ProyectoParcial2.Models.Estudiante", b =>
+            modelBuilder.Entity("Universidad.Models.Estudiante", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ProyectoParcial2.Migrations
+namespace Universidad.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate2 : Migration

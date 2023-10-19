@@ -1,10 +1,39 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-image: url('https://www.ecestaticos.com/imagestatic/clipping/694/e70/694e707c0634fe834834da0581d43e2a/la-universidad-complutense-plantea-reducir-de-26-a-22-sus-facultades.jpg?mtime=1480415339');
+        /* Reemplaza 'ruta_de_la_imagen.jpg' con la URL de tu imagen de fondo */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
+    /* Estilo del rectángulo para .display-4 */
+    .display-4 {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Fondo del rectángulo con opacidad */
+        padding: 20px;
+        /* Espaciado interior del rectángulo */
+        border: 2px solid #007BFF;
+        /* Borde del rectángulo */
+        text-align: center;
+        color: #007BFF;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 50px auto;
+        /* Centrar verticalmente y centralizar horizontalmente */
+        max-width: 400px;
+        /* Ancho máximo del rectángulo */
+    }
+</style>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bienvenido a la Universidad</h1>
 </div>

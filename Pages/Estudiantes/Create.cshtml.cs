@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ProyectoParcial2.Data;
-using ProyectoParcial2.Models;
+using Universidad.Data;
+using Universidad.Models;
 
-namespace ProyectoParcial2.Pages_Estudiantes
+namespace Universidad.Pages_Estudiantes
 {
     public class CreateModel : PageModel
     {
-        private readonly ProyectoParcial2.Data.ProyectoParcial2Context _context;
+        private readonly Universidad.Data.UniversidadContext _context;
 
-        public CreateModel(ProyectoParcial2.Data.ProyectoParcial2Context context)
+        public CreateModel(Universidad.Data.UniversidadContext context)
         {
             _context = context;
         }

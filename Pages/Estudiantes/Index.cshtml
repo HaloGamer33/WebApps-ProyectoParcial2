@@ -1,15 +1,44 @@
 @page
-@model ProyectoParcial2.Pages_Estudiantes.IndexModel
+@model Universidad.Pages_Estudiantes.IndexModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    h1 {
+        color: rgb(217, 232, 233); /* Cambia el color del título h1 */
+          font-family:'Courier New', Courier, monospace;
+    }
+
+    p a {
+        color: #15ceb5; /* Cambia el color de los hipervínculos dentro de párrafos */
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        background-color: #0077cc; /* Cambia el color de fondo de las celdas del encabezado */
+        color: #fff; /* Cambia el color del texto en el encabezado */
+    }
+
+    td {
+        color: #d4d4d4; /* Cambia el color del texto en las celdas de datos */
+    }
+
+    a {
+        color: rgb(34, 238, 228), 0, 204); /* Cambia el color de los hipervínculos */
+    }
+</style>
+
+<h1>Estudiantes</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Crear nuevo estudiante</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -26,7 +55,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Estudiante) {
+        @foreach (var item in Model.Estudiante) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Apellidos)
@@ -38,11 +67,11 @@
                 @Html.DisplayFor(modelItem => item.Fecha_inscripcion)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Eliminar</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>

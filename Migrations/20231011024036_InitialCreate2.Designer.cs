@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProyectoParcial2.Data;
+using Universidad.Data;
 
 #nullable disable
 
-namespace ProyectoParcial2.Migrations
+namespace Universidad.Migrations
 {
-    [DbContext(typeof(ProyectoParcial2Context))]
+    [DbContext(typeof(UniversidadContext))]
     [Migration("20231011024036_InitialCreate2")]
     partial class InitialCreate2
     {
@@ -20,7 +20,7 @@ namespace ProyectoParcial2.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.12");
 
-            modelBuilder.Entity("ProyectoParcial2.Models.Curso", b =>
+            modelBuilder.Entity("Universidad.Models.Curso", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,7 +37,7 @@ namespace ProyectoParcial2.Migrations
                     b.ToTable("Curso");
                 });
 
-            modelBuilder.Entity("ProyectoParcial2.Models.Estudiante", b =>
+            modelBuilder.Entity("Universidad.Models.Estudiante", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,7 +57,7 @@ namespace ProyectoParcial2.Migrations
                     b.ToTable("Estudiante");
                 });
 
-            modelBuilder.Entity("ProyectoParcial2.Models.Inscripcion", b =>
+            modelBuilder.Entity("Universidad.Models.Inscripcion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

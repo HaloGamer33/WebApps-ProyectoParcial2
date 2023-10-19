@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ProyectoParcial2.Data;
-using ProyectoParcial2.Models;
+using Universidad.Data;
+using Universidad.Models;
 
-namespace ProyectoParcial2.Pages_Cursos
+namespace Universidad.Pages_Cursos
 {
     public class EditModel : PageModel
     {
-        private readonly ProyectoParcial2.Data.ProyectoParcial2Context _context;
+        private readonly Universidad.Data.UniversidadContext _context;
 
-        public EditModel(ProyectoParcial2.Data.ProyectoParcial2Context context)
+        public EditModel(Universidad.Data.UniversidadContext context)
         {
             _context = context;
         }

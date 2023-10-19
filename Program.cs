@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ProyectoParcial2.Data;
+using Universidad.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ProyectoParcial2Context>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("ProyectoParcial2Context") ?? throw new InvalidOperationException("Connection string 'ProyectoParcial2Context' not found.")));
+builder.Services.AddDbContext<UniversidadContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("UniversidadContext") ?? throw new InvalidOperationException("Connection string 'UniversidadContext' not found.")));
 
 var app = builder.Build();
 

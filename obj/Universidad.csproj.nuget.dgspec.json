@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\ProyectoParcial2\\ProyectoParcial2.csproj": {}
+    "C:\\Users\\aledi\\OneDrive\\Desktop\\notas diseño\\Universidad\\Universidad\\Universidad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\ProyectoParcial2\\ProyectoParcial2.csproj": {
+    "C:\\Users\\aledi\\OneDrive\\Desktop\\notas diseño\\Universidad\\Universidad\\Universidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\ProyectoParcial2\\ProyectoParcial2.csproj",
-        "projectName": "ProyectoParcial2",
-        "projectPath": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\ProyectoParcial2\\ProyectoParcial2.csproj",
-        "packagesPath": "C:\\Users\\HaloGamer33\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HaloGamer33\\The Library\\Documents\\Escuela\\Universidad\\Tercer Semestre\\Web Apps\\ProyectoParcial2\\obj\\",
+        "projectUniqueName": "C:\\Users\\aledi\\OneDrive\\Desktop\\notas diseño\\Universidad\\Universidad\\Universidad.csproj",
+        "projectName": "Universidad",
+        "projectPath": "C:\\Users\\aledi\\OneDrive\\Desktop\\notas diseño\\Universidad\\Universidad\\Universidad.csproj",
+        "packagesPath": "C:\\Users\\aledi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aledi\\OneDrive\\Desktop\\notas diseño\\Universidad\\Universidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HaloGamer33\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aledi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
